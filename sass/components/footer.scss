@@ -1,0 +1,16 @@
+//Footer
+footer {
+    background-color: black;
+    min-height: 100px;
+}
+
+;
+
+//Media Queries
+@media(max-width: 426px) {
+
+    footer>p {
+        //Alteração para todos os filhos "p" do "footer"
+        font-size: 12px;
+    }
+}

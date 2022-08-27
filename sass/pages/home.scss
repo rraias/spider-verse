@@ -1,0 +1,69 @@
+//Container of Body items
+.container-heros{
+    margin-top: 5%;
+}
+
+;
+
+//Each Hero Container
+.hero{
+    display: flex;
+    width: fit-content;
+    border: 6px solid #10000a;
+    border-radius: 8px;
+    box-shadow: -5px 5px #4e0a08de;;
+    margin-bottom: 5%;
+    background-color: $primary-red;
+    transition: 0.2s;
+
+    &:hover{
+        transform: scale(1.01)
+    }
+}
+
+;
+
+//Titles in Containers
+.title{
+    border-left: 6px solid $primary-blue;
+    font-weight: bold
+}
+
+;
+
+//Text in Containers
+.text{
+    margin-left: 2%
+}
+
+//Image in Containers
+.hero-image{
+    min-width: 300px;
+    max-height: 300px;
+    border: 4px solid black;
+}
+
+
+;
+
+//Media Queries
+
+@media(max-width: 994px){
+    .hero{
+        display: block;
+    }
+
+    .text{
+        margin-left: 0%
+    }
+}
+
+;
+
+@media(max-width: 370px){
+    .hero-image{
+        min-width: 200px;
+        max-height: 200px;
+    }
+}
+

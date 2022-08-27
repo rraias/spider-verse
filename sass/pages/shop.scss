@@ -1,0 +1,338 @@
+//Container of All comics
+.comics {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+//Each comic container
+.comic {
+    height: 26rem;
+    margin-bottom: 3%;
+    width: 20rem;
+    box-shadow: -2px 3px #454545
+}
+
+;
+
+//Comic Titles
+.comic-title,
+.comic-price {
+    color: $primary-blue;
+}
+
+;
+
+//Price
+.comic-price {
+    position: absolute;
+    bottom: 8.5%;
+}
+
+;
+
+.card-img {
+    margin-left: 25%;
+    padding-top: 2%;
+    box-shadow: -4px 6px #454545
+}
+
+;
+
+//Alert
+.alert {
+    position: absolute;
+    z-index: 1;
+    left: 75%;
+    opacity: 0;
+}
+
+;
+
+//Add to Cart Button
+.btn-buy {
+    position: absolute;
+    bottom: 1%;
+    left: 4%;
+    background-color: $primary-red;
+    border: 0px;
+    transition: 0.2s;
+
+    &:hover, &:focus{
+        transform: scale(1.03);
+        background-color: #de160c;
+    }
+}
+
+;
+
+//Details Button
+.btn-details {
+    position: absolute;
+    bottom: 1%;
+    left: 40%;
+    background-color: $primary-blue;
+    border: 0px;
+    transition: 0.2s;
+
+    &:hover, &:focus {
+        transform: scale(1.03);
+        background-color: #1460b8
+    }
+}
+
+;
+
+//Pagination styling
+.pagination>* {
+    color: $primary-blue;
+    margin-left: 2px;
+}
+
+;
+
+//Cart Styling
+//Dropdown Menu in nav styling
+.dropdown {
+    margin-right: 5%;
+}
+
+;
+
+//Whole cart
+.cart {
+    max-height: 600px;
+    white-space: nowrap;
+    overflow-y: scroll;
+    padding-left: 4px;
+    margin-right: 10%
+}
+
+;
+
+//Each cart Item
+.cart-item {
+    max-width: 300px;
+    font-size: 14px;
+    display: flex;
+    padding-left: 0px;
+}
+
+;
+
+.cart-img {
+    max-width: 100px;
+}
+
+;
+
+.cart-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+;
+
+//Hover style for cart buttons
+.cart-btns>*:hover {
+    transition: 0.2s;
+    background-color: $primary-blue;
+    transform: scale(1.02);
+}
+
+;
+
+//Modal styling
+.modal-body,
+.modal-title {
+    color: $primary-blue
+}
+
+;
+
+.modal-id,
+.modal-title {
+    font-weight: 600;
+}
+
+;
+
+.modal-btn {
+    background-color: $primary-blue;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: $primary-blue;
+        transform: scale(1.02);
+    }
+}
+
+;
+
+.modal-img {
+    margin-left: 25%;
+}
+
+;
+
+//Media Queries
+@media(max-width: 1640px) {
+    .dropdown {
+        margin-right: 22%;
+    }
+}
+
+;
+
+@media(max-width: 1200px) {
+    .comic {
+        height: 20rem;
+        width: 12rem;
+    }
+
+    ;
+
+    .comic-title {
+        font-size: 0.9rem;
+    }
+
+    ;
+
+    .comic-price {
+        bottom: 10%;
+    }
+
+    ;
+
+    .btn-details {
+        left: 50%;
+        font-size: 12px
+    }
+
+    ;
+
+    .btn-buy {
+        left: 4%;
+        font-size: 12px;
+    }
+
+    ;
+
+    .alert {
+        left: 65%;
+    }
+
+}
+
+;
+
+@media(max-width: 868px) {
+    .cart-item {
+        max-width: 250px;
+    }
+}
+
+;
+
+@media(max-width: 770px) {
+    .comic {
+        height: 16rem;
+        width: 10rem;
+    }
+
+    ;
+
+    .comic-title {
+        font-size: 0.8rem;
+    }
+
+    ;
+
+    .comic-price {
+        bottom: 10%;
+        font-size: 1rem
+    }
+
+    ;
+
+    .btn-details {
+        left: 60%;
+    }
+
+    ;
+
+    .btn-buy {
+        left: 4%;
+    }
+
+    ;
+
+    .alert {
+        left: 55%;
+    }
+}
+
+;
+
+@media(max-width: 670px) {
+    .dropdown {
+        margin-right: 30%;
+    }
+
+}
+
+;
+
+@media(max-width: 580px) {
+    .dropdown {
+        margin-right: 40%;
+    }
+    ;
+    .alert {
+        left: 45%;
+    }
+}
+
+@media(max-width: 570px) {
+    .comic {
+        height: 15rem;
+        margin-bottom: 2%;
+        width: 08rem;
+    }
+
+    ;
+
+    .comic-title {
+        font-size: 0.7rem;
+
+    }
+
+    ;
+
+    .btn-details {
+        left: 55%;
+        font-size: 08px
+    }
+
+    ;
+
+    .btn-buy {
+        left: 2%;
+        font-size: 08px;
+    }
+
+    ;
+
+    .cart-item {
+        width: 250px;
+    }
+
+    ;
+
+    .alert {
+        left: 25%;
+    }
+}

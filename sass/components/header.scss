@@ -1,0 +1,47 @@
+//Logo image
+.logo {
+    width: 100px;
+    margin-right: 4rem;
+    transition: 0.2s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
+;
+
+//Spiders at nav-links
+.spider{
+    width: 30px
+}
+
+;
+
+//Nav-links
+.nav-link {
+    font-size: 22px;
+    font-weight: bold;
+    transition: 0.2s;
+    &:hover {
+        transform: scale(1.1);
+        color: $primary-red !important
+    }
+}
+
+;
+
+//BG 
+header{
+    background-color: $primary-blue
+}
+
+@media(max-width: 990px){
+    .logo{
+        padding-bottom: 4%;
+    }
+    .nav-link{
+        padding-bottom: 2%;
+    }
+
+
+}

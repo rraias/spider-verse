@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpiderVerse - Home</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;700&display=swap" rel="stylesheet">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../images/favicon.png" type="image">
+
+    <!--Boostrap CSS-->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <!--Boostrap Icons CSS-->
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!--Css-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container pt-1">
+            <nav class="navbar navbar-expand-lg bg-transparent navbar-dark">
+                <div class="container-fluid">
+                    <img class="logo navbar-brand" src="../images/logo.png">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link me-5 active" aria-current="page" href="/index.html">
+                                    <img class="spider me-3" src="../images/spider.png">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-5 active" href="/html-pages/shop.html">
+                                    <img class="spider me-3" src="../images/spider.png">SHOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/html-pages/contact.html">
+                                    <img class="spider me-3" src="../images/spider.png">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="form-title display-4">Send your message to us:</h1>
+
+        <form>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Name</span>
+                <input type="text" class="form-control" placeholder="Your Name" aria-label="Username"
+                    aria-describedby="basic-addon1" required>
+            </div>
+
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">E-mail</span>
+                <input type="email" class="form-control" placeholder="Your E-mail" aria-label="Username"
+                    aria-describedby="basic-addon1" required>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">City</span>
+                        <input type="text" class="form-control" placeholder="Your City" aria-label="Username"
+                            aria-describedby="basic-addon1" required>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <select class="form-select mb-3" aria-label="Default select example" required>
+                        <option selected>Select your state:</option>
+                        <option value="1">AC</option>
+                        <option value="2">AL</option>
+                        <option value="3">AP</option>
+                        <option value="4">AM</option>
+                        <option value="5">BA</option>
+                        <option value="6">CE</option>
+                        <option value="7">DF</option>
+                        <option value="8">ES</option>
+                        <option value="9">GO</option>
+                        <option value="10">MA</option>
+                        <option value="11">MT</option>
+                        <option value="12">MS</option>
+                        <option value="13">MG</option>
+                        <option value="14">PA</option>
+                        <option value="15">PB</option>
+                        <option value="16">PR</option>
+                        <option value="17">PE</option>
+                        <option value="18">PI</option>
+                        <option value="19">RJ</option>
+                        <option value="20">RN</option>
+                        <option value="21">RS</option>
+                        <option value="22">RO</option>
+                        <option value="23">RR</option>
+                        <option value="24">SC</option>
+                        <option value="25">SP</option>
+                        <option value="26">SE</option>
+                        <option value="27">TO</option>
+        
+                      </select>
+                </div>
+            </div>
+
+            <div class="input-group message mb-3">
+                <span class="input-group-text">Message</span>
+                <textarea class="form-control" aria-label="With textarea" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark mb-5 form-btn">Send</button>
+
+        </form>
+    </div>
+
+
+    <footer class="container-fluid pb-5">
+        <p class="text-center pt-3">Feito por Raphael Raia.
+        </p>
+        <p class="text-center">Minhas redes:</p>
+        <p class="text-center h6"><a href="https://github.com/rraias" class="me-3" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/raphael-raia-895486234/" target="_blank">Linkedin</a>
+        </p>
+
+    </footer>
+
+    <!--Boostrap JS-->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--JS-->
+    <script src="../src/shop.js" type="module"></script>
+</body>
+
+</html>

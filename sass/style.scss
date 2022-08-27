@@ -1,0 +1,16 @@
+//Variables:
+@import "./variables/colors.scss"; //Import of Colors
+
+//Components:
+@import "./components/header.scss"; //Import of Header
+
+@import "./components/footer.scss"; //Import of Footer
+
+//Common Usage:
+@import "./common/common.scss"; //Import of Common Usage
+
+
+//Pages:
+@import "./pages/home.scss"; //Import of home page;
+@import "./pages/shop.scss"; //Import of Shop page;
+@import "./pages/contact.scss"; //Import of contact page
