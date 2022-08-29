@@ -2,5 +2,8 @@
   "dependencies": {
     "bootstrap": "^5.2.0",
     "bootstrap-icons": "^1.9.1"
+  },
+  "engines": {
+    "node": "16.17.0"
   }
 }
