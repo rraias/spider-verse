@@ -1,16 +1,5 @@
 //Fetch the data from Api
-async function getHeros(url) {
-    try {
-        const response = await fetch(url);
-        const results = await response.json();
-        return results.data["results"]
-    } catch (error) {
-        console.log(error)
-    }
-}
-;
-
-async function getComics(url){
+export default async function fetchApi(url) {
     try {
         const response = await fetch(url);
         const results = await response.json();
@@ -20,5 +9,3 @@ async function getComics(url){
     }
 }
 
-
-export {getHeros, getComics}

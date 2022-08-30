@@ -103,18 +103,17 @@
 
 //Whole cart
 .cart {
-    max-height: 600px;
+    max-height: 400px;
     white-space: nowrap;
-    overflow-y: scroll;
+    overflow-y: auto;
     padding-left: 4px;
-    margin-right: 10%
 }
 
 ;
 
 //Each cart Item
 .cart-item {
-    max-width: 300px;
+    width: 300px;
     font-size: 14px;
     display: flex;
     padding-left: 0px;
@@ -123,7 +122,7 @@
 ;
 
 .cart-img {
-    max-width: 100px;
+    width: 100px;
 }
 
 ;
@@ -232,6 +231,10 @@
 @media(max-width: 868px) {
     .cart-item {
         max-width: 250px;
+    }
+    ;
+    .cart {
+        height: 200px;
     }
 }
 

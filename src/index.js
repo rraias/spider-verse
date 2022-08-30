@@ -1,10 +1,10 @@
 import { Hero } from "./class.js"; //Class Constructor
-import { getHeros } from "./service.js"; //Fetch from Api
+import fetchApi from "./service.js";
 
 //Filter the data and put in an array
 async function loadHeros() {
     let heros = [];
-    let herosJSON = await getHeros("https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=Spider&limit=21&apikey=0a760010550c89964802de0f5a823b40");
+    let herosJSON = await fetchApi("https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=Spider&limit=21&apikey=0a760010550c89964802de0f5a823b40");
     herosJSON.forEach(hero => {
         if (hero.name == 'Spider-Ham (Larval Earth)' || hero.name == 'Spider-dok' || hero.description == "" || hero.description == " ") { return }
         let newHero = new Hero(hero.name, hero.description, hero.thumbnail.path)

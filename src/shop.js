@@ -1,10 +1,10 @@
 import { Comic } from "./class.js";
-import { getComics } from "./service.js";
+import fetchApi from "./service.js";
 
 //Filter the data and put in an array
 async function loadComics(url) {
     let comics = [];
-    let comicsJSON = await getComics(url);
+    let comicsJSON = await fetchApi(url);
     comicsJSON.forEach(comic => {
         if (comic == comicsJSON[1]) { return }
         let newComic = new Comic(comic.id, comic.title, comic.prices[0].price, comic.thumbnail.path, comic.creators.items);
@@ -15,7 +15,6 @@ async function loadComics(url) {
 
 //Render the data into HTML file
 function renderComics(comics) {
-
     let comicList = document.querySelector(".comics");
     comicList.innerHTML = comics.map(comic => {
         if (comic.price == 0) { comic.price = 4.50 };
@@ -161,9 +160,4 @@ function clearCart() {
     cart.innerHTML = "";
     price.innerHTML = "Total:";
     comicArray.splice(0, comicArray.length);
-}
-
-//Function to call the alert
-function callAlert(){
-
 }
